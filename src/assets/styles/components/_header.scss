@@ -1,21 +1,10 @@
 .global-header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 3fr;
   align-items: center;
   height: 50px;
+  padding: 0 40px;
   background-color: $primary;
-}
-
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 40px;
-
-}
-
-.nav-list__item {
-  text-decoration: none;
 }
 
 .logo {
@@ -24,15 +13,14 @@
   padding-right: 10px;
 }
 
-.global-header__title {
+.global-header__branding {
   display: flex;
   align-items: center;
+  color: $white;
   font-size: 24px;
-  padding-left: 40px;
-
+  font-weight: bold;
 }
 
-.search-icon {
-  width: 24px;
-  height: 24px;
+.global-header__title {
+  display: none;
 }

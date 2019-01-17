@@ -1,8 +1,11 @@
  <template>
   <header class="global-header" role="banner">
-    <a href="#" class="global-header__title"><img src="../assets/images/logo-autosales.svg" alt="Icon of a Yellow Car" class="logo"/>AutoSales.com</a>
-    <nav class="global-header__nav" role="navigation">
-      <ul class="nav-list" role="list">
+    <a href="#" class="global-header__branding"><img src="../assets/images/logo-autosales.svg" alt="Icon of a Yellow Car" class="logo"/><h1 class="global-header__title">AutoSales.com</h1></a>
+     <button class="global-header__nav-button" @click="isActive = !isActive" role="button">
+      <span class="nav-button__icon" :class="{active: isActive}"></span>
+    </button>
+    <nav class="global-header__nav" :class="{'button--animated-open': isActive}" role="navigation">
+      <ul class="nav-list u-flex" role="list">
         <li class="nav-list__item" role="listitem"><a href="#" class="nav-list__link" role="link">Cars for Sale</a></li>
         <li class="nav-list__item" role="listitem"><a href="#" class="nav-list__link" role="link">Sell My Car</a></li>
         <li class="nav-list__item" role="listitem"><a href="#" class="nav-list__link" role="link">Find a Dealer</a></li>
@@ -15,7 +18,13 @@
 
 <script>
 export default {
-	name: 'Navbar',
+	name: 'global-header',
+	data() {
+		return {
+			isActive: false,
+		};
+	},
+	computed: {},
 };
 </script>
 

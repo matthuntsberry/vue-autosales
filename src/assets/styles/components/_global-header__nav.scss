@@ -1,0 +1,82 @@
+// Nav on Mobile
+.global-header__nav {
+  position: fixed;
+  z-index: 1;
+  top: 50px;
+  right: 0;
+  width: 320px;
+  height: 100vh;
+  padding-top: 60px;
+  overflow-x: hidden;
+  transform: translateX(320px);
+  transition: all .3s ease-in-out;
+  background-color: $primary;
+}
+
+// Hamburger button stylings
+.global-header__nav-button {
+  justify-self: flex-end;
+  width: 40px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: $primary;
+}
+
+// Middle of Icon
+.nav-button__icon {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 4px;
+  transition-duration: .5s;
+  background-color: $white;
+}
+
+// Top & Bottom of Icon
+.nav-button__icon::before,
+.nav-button__icon::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  transition-duration: .2s;
+  background-color: $white;
+}
+
+// Positioning of top and bottom of Icon
+.nav-button__icon::before {
+  top: -10px;
+}
+
+.nav-button__icon::after {
+  top: 10px;
+}
+
+// Animates on button click
+// Forms `X`
+.active {
+  height: 0;
+}
+
+.active::before {
+  top: 0;
+  transform: rotate(135deg);
+
+}
+
+.active::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+// .nav-list {
+//   display: none;
+// }
+
+.button--animated-open {
+  transform: translateX(0);
+}
+

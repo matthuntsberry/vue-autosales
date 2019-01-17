@@ -4,10 +4,13 @@
 @import './base/reset';
 @import './base/settings';
 @import './base/base';
+@import './base/animations';
+@import './base/utilities';
 
 
 //-----------
 // COMPONENTS
 //-----------
 @import './components/header';
+@import './components/global-header__nav';
 
