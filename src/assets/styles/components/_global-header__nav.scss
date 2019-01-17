@@ -6,7 +6,7 @@
   right: 0;
   width: 320px;
   height: 100vh;
-  padding-top: 60px;
+  padding-top: 30px;
   overflow-x: hidden;
   transform: translateX(320px);
   transition: all .3s ease-in-out;
@@ -16,7 +16,7 @@
 // Hamburger button stylings
 .global-header__nav-button {
   justify-self: flex-end;
-  width: 40px;
+  width: 30px;
   height: 50px;
   margin: 0;
   padding: 0;
@@ -28,11 +28,12 @@
 .nav-button__icon {
   display: block;
   position: relative;
-  width: 40px;
+  width: 30px;
   height: 4px;
   transition-duration: .5s;
   background-color: $white;
 }
+
 
 // Top & Bottom of Icon
 .nav-button__icon::before,
@@ -40,7 +41,7 @@
   content: '';
   display: block;
   position: absolute;
-  width: 40px;
+  width: 30px;
   height: 4px;
   transition-duration: .2s;
   background-color: $white;
@@ -72,11 +73,26 @@
   transform: rotate(-135deg);
 }
 
-// .nav-list {
-//   display: none;
-// }
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50vh;
+
+}
+
+.nav-list__link {
+  transition: all .5s;
+  border-bottom: 1px solid #777;
+  color: $white;
+  font-size: 24px;
+
+  &:hover {
+    color: $yellow;
+  }
+}
 
 .button--animated-open {
   transform: translateX(0);
 }
-

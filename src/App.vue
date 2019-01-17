@@ -1,16 +1,19 @@
 <template>
   <div class="app">
     <global-header />
+    <hero-main />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue';
+import Hero from './components/Hero-main.vue';
 
 export default {
 	name: 'app',
 	components: {
 		'global-header': Header,
+		'hero-main': Hero,
 	},
 };
 </script>

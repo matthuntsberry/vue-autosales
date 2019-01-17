@@ -1,7 +1,8 @@
 .global-header {
   display: grid;
-  grid-template-columns: auto 3fr;
+  grid-template-columns: min-content min-content;
   align-items: center;
+  justify-content: space-between;
   height: 50px;
   padding: 0 40px;
   background-color: $primary;
@@ -23,4 +24,16 @@
 
 .global-header__title {
   display: none;
+}
+
+.search-icon__button {
+  margin-right: 20px;
+  padding: 0;
+  background-color: $primary;
+  border: none;
+}
+
+.search-icon {
+  width: 24px;
+  height: 24px;
 }

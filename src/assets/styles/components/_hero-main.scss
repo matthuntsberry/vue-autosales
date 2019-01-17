@@ -1,0 +1,35 @@
+.hero-main {
+  position: relative;
+  width: 320px;
+  height: 167px;
+  background: url('~/img/bg-landing-hero-small.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-main__title {
+  position: absolute;
+  top: 30px;
+  left: 27px;
+  width: 240px;
+  color: $primary;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.111;
+  text-align: left;
+}
+
+.hero-main__button {
+  position: absolute;
+  top: 90px;
+  left: 27px;
+  width: 140px;
+  height: 30px;
+  background-color: rgb(40, 194, 120);
+  color: $white;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+
+
