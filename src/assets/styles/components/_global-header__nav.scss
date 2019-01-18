@@ -13,11 +13,15 @@
   background-color: $primary;
 }
 
+.global-header__nav--animated-open {
+  transform: translateX(0);
+}
+
 // Hamburger button stylings
 .global-header__nav-button {
   justify-self: flex-end;
   width: 30px;
-  height: 50px;
+  height: 44px;
   margin: 0;
   padding: 0;
   border: none;
@@ -85,14 +89,11 @@
 .nav-list__link {
   transition: all .5s;
   border-bottom: 1px solid #777;
-  color: $white;
+  color: $secondary-text;
   font-size: 24px;
 
   &:hover {
-    color: $yellow;
+    color: $primary-hover;
   }
 }
 
-.button--animated-open {
-  transform: translateX(0);
-}

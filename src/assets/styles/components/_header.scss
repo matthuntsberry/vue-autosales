@@ -17,13 +17,14 @@
 .global-header__branding {
   display: flex;
   align-items: center;
-  color: $white;
-  font-size: 24px;
+  color: $secondary-text;
+
   font-weight: bold;
 }
 
 .global-header__title {
   display: none;
+  font-size: 24px;
 }
 
 .search-icon__button {
@@ -33,7 +34,7 @@
   border: none;
 }
 
-.search-icon {
+.search-icon__image {
   width: 24px;
   height: 24px;
 }

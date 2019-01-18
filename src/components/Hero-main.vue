@@ -1,8 +1,8 @@
 <template>
-  <div class="hero-main">
-    <h2 class="hero-main__title">The Car of Your Dreams is Only a Click Away!</h2>
-    <button class="hero-main__button">Get Started Now</button>
-  </div>
+  <section class="hero-main" role="region">
+    <h2 class="hero-main__title" role="heading">The Car of Your Dreams is Only a Click Away!</h2>
+    <button class="hero-main__button" role="button">Get Started Now</button>
+  </section>
 </template>
 
 <script>
