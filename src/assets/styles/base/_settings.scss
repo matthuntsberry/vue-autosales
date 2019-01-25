@@ -1,10 +1,11 @@
 //--------
 // COLORS
 //--------
-
+$blue: #4fc4e6;
 $dark-blue: #3d4852;
 $green: #28c278;
-$light-gray: #9aa0a5;
+$gray: #9aa0a5;
+$off-white: #f0f2f3;
 $orange: #f07e5e;
 $white: #fff;
 $yellow: #f4d759;
@@ -12,10 +13,12 @@ $yellow: #f4d759;
 
 // Defined Colors
 $primary: $dark-blue;
+$secondary: $off-white;
 
 // Defined Button Colors
 $primary-button: $green;
 $secondary-button: $orange;
+$tertiary-button: $blue;
 
 
 // Defined Hover Colors
@@ -24,4 +27,4 @@ $primary-hover: $yellow;
 // Defined Text Colors
 $primary-text: $dark-blue;
 $secondary-text: $white;
-$tertiary-text: $light-gray;
+$tertiary-text: $gray;
