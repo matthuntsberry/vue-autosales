@@ -1,19 +1,19 @@
 <template>
-  <main class="feature-content">
-  <section class="featured-content__card u-grid" v-for="(product, index) in products" :key="index">
-    <section class="card-content__text">
-      <h2 class="card__title">{{product.title}}</h2>
+  <main class="feature-content" role="main">
+  <section class="featured-content__card u-grid" role="region" v-for="(product, index) in products" :key="index">
+    <section class="card-content__text" role="region">
+      <h2 class="card__title" role="heading">{{product.title}}</h2>
       <p class="card__body">{{product.description}}</p>
       <a href="#" class="card__button">View All</a>
     </section>
-    <section class="card-content__images">
-      <a href="#">
+    <section class="card-content__images" role="region">
+      <a href="#" role="link">
         <picture class="card__image" v-for="(img, index) in product.img" :key="index">
-          <img v-bind:src="img" />
+          <img v-bind:src="img" role="img"/>
         </picture>
       </a> 
     </section>    
-    </section>
+  </section>
   </main>
 </template>
 

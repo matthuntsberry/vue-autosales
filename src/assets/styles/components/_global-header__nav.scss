@@ -21,7 +21,7 @@
 .global-header__nav-button {
   justify-self: flex-end;
   width: 30px;
-  height: 44px;
+  height: 50px;
   margin: 0;
   padding: 0;
   border: none;
@@ -35,6 +35,7 @@
   width: 30px;
   height: 4px;
   transition-duration: .5s;
+  border-radius: 5px;
   background-color: $white;
 }
 
@@ -48,6 +49,7 @@
   width: 30px;
   height: 4px;
   transition-duration: .2s;
+  border-radius: 5px;
   background-color: $white;
 }
 

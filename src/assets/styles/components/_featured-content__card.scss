@@ -11,23 +11,24 @@
 }
 
 .card__title {
+  margin-bottom: 20px;
   color: $primary-text;
-  font-size: 18px;
+  font-size: 30px;
   font-weight: bold;
-  line-height: 2;
 }
 
 .card__body {
-  height: 75px;
+  margin-bottom: 20px; 
   color: $primary-text;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.667;
 }
 
 .card__button {
-  display: inline-block;
+  display: block;
   width: 280px;
   height: 45px;
+  margin: 0 auto;
   background-color: $tertiary-button;
   color: $white;
   font-family: 'Helvetica Neue';
