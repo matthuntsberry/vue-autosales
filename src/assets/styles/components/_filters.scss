@@ -1,0 +1,34 @@
+.filters {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  // height: 100px; <-// Mobile
+  background-color: $white;
+}
+
+.filters-list {
+  width: 280px;
+  height: 45px;
+  margin: 10px 10px 0;
+  padding-left: 20px;
+  border: 2px solid #cdd1d4;
+  border-radius: 0;
+  background: url('/img/chevron.svg') no-repeat;
+  background-position: top 3px right;
+  color: $tertiary-text;
+  font-family: 'Helvetica Neue';
+  font-size: 16px;
+  font-weight: bold;
+  appearance: none;
+}
+
+.filters__button {
+  width: 280px;
+  height: 45px;
+  margin: 10px 10px 0;
+  background-color: $secondary-button;
+  color: #fff;
+  font-family: 'Helvetica Neue';
+  font-size: 16px;
+  font-weight: bold;
+}
