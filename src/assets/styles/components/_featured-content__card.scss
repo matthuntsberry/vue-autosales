@@ -3,22 +3,42 @@
 
   @media(min-width: 1000px) {
     display: grid;
+    grid-auto-flow: dense;
     grid-template-columns: 1fr 1fr;
     height: 360px;
     padding: 0 210px;
   }
 }
 
+// ALL EVEN CARD CSS RULES
 .featured-content__card:nth-child(even) {
   background-color: $white;
+
+  @media(min-width: 1000px) {
+    // Because of looing through cards
+    // as arrays in Vue Component
+    // had to nest selectors to reverse
+    // column layout.
+    .card-content__text {
+      justify-self: flex-end;
+      grid-column: 2 / 3;
+      
+    }
+    
+    .card-content__images {
+      grid-column: 1 / 2;
+      justify-self: flex-start;
+    }
+  }
 }
 
 .card-content__text {
   padding: 20px;
 
   @media(min-width: 1000px) {
-    padding: 0;
+    width: 490px;
     margin: 65px 0 40px;
+    padding: 0;
   }
 }
 
@@ -56,19 +76,32 @@
   }
 }
 
-.card-content__images {
-  //text-align: center;
+.card__image-container {
+  display: inline-flex;
+  flex-direction: row;
+  width: 280px;
+  height: 280px;
+  margin-bottom: 20px;
+  background-color: #fff;
 
   @media(min-width: 1000px) {
-    text-align: right;
+    margin: 0;
+    margin-top: 40px;
   }
 }
 
-.card__image-container {
-  display: inline-block;
-  width: 280px;
-  height: 280px;
-  margin: 0 0 20px 20px;
-  background-color: #fff;
+.card-content__images {
+  text-align: center;  
+  @media(min-width: 1000px) {
+    justify-self: flex-end;
+  }
+}
+
+.card-content__image--link {
+  @media(min-width: 1000px) {
+    :not(:first-child) {
+      margin-left: 20px;
+    }
+  }
 }
 

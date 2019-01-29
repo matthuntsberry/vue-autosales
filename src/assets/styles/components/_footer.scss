@@ -6,38 +6,42 @@
   height: 150px;
   padding: 0 18px;
   background-color: $primary;
+
+  @media(min-width: 1000px) {
+    padding: 0 36px;
+  }
 }
 
 .page-info {
   flex-direction: column;
   align-items: flex-end;
-  width: 220px;
+  width: 230px;
+  font-weight: bold;
+  line-height: 1.5;
+  
+  @media(min-width: 1000px) {
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+    width: 500px;
+    line-height: 1;
+
+    :not(:first-child) {
+      border-left: 2px solid $quaternary-text;
+    }
+  }
 }
 
 .page-info__item {
-  color: #6d7780;
+  color: $quaternary-text;
   font-size: 14px;
 
+  @media(min-width: 1000px) {
+    padding: 0 10px;
+  }
 }
 
 .page-info__link {
-  color: #6d7780;
+  color: $quaternary-text;
   text-decoration: none;
-
-  &:visited,
-  &:active {
-    color: #6d7780;
-  }
-
 }
-
-// .Copyright_©_2016_AutoSales_com_____All_rights_r {
-//   font-family: "Helvetica Neue";
-//   color: rgb(109, 119, 128);
-//   font-weight: bold;
-//   line-height: 4.561;
-//   position: absolute;
-//   left: 1086px;
-//   top: 2197.933px;
-//   z-index: 8;
-// }
