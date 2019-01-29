@@ -1,6 +1,6 @@
  <template>
   <header class="global-header" role="banner">
-    <a href="#" class="global-header__branding" role="link"><img src="../assets/img/logo-autosales.svg" alt="Icon of a Yellow Car" class="logo" role="presentation"/><h1 class="global-header__title" role="heading">AutoSales.com</h1></a>
+    <a href="#" class="global__branding u-flex" role="link"><img src="../assets/img/logo-autosales.svg" alt="Icon of a Yellow Car" class="logo" role="presentation"/><h1 class="global__title" role="heading">AutoSales.com</h1></a>
      <section class="global-header__controls u-flex" role="region">
         <button class="search-icon__button" role="button"><img src="../assets/img/icon-search-white.svg" alt="Magnifying Glass Symobolizing a Search Field" class="search-icon__image" role="presentation"></button>
         <button class="global-header__nav-button" @click="toggleNav" role="button">

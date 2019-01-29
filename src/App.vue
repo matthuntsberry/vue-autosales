@@ -4,6 +4,7 @@
     <hero-main />
     <filters />
     <featured />
+    <global-footer />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Header from './components/Header.vue';
 import Hero from './components/Hero-main.vue';
 import Filters from './components/Filters.vue';
 import Featured from './components/Featured-Content__Card.vue';
+import Footer from './components/Footer.vue';
 
 export default {
 	name: 'app',
@@ -20,6 +22,7 @@ export default {
 		'hero-main': Hero,
 		filters: Filters,
 		featured: Featured,
+		'global-footer': Footer,
 	},
 };
 </script>

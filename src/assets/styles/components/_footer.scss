@@ -1,0 +1,43 @@
+.global-footer {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+  padding: 0 18px;
+  background-color: $primary;
+}
+
+.page-info {
+  flex-direction: column;
+  align-items: flex-end;
+  width: 220px;
+}
+
+.page-info__item {
+  color: #6d7780;
+  font-size: 14px;
+
+}
+
+.page-info__link {
+  color: #6d7780;
+  text-decoration: none;
+
+  &:visited,
+  &:active {
+    color: #6d7780;
+  }
+
+}
+
+// .Copyright_©_2016_AutoSales_com_____All_rights_r {
+//   font-family: "Helvetica Neue";
+//   color: rgb(109, 119, 128);
+//   font-weight: bold;
+//   line-height: 4.561;
+//   position: absolute;
+//   left: 1086px;
+//   top: 2197.933px;
+//   z-index: 8;
+// }

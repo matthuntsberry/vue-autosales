@@ -1,9 +1,17 @@
 .hero-main {
+  position: relative;
   min-width: 320px;
   height: 240px;
   background: url('~/img/bg-hero-landing-large-c_scale,w_700 webp.webp') no-repeat;
   background-position: right -175px center;
   background-size: cover;
+
+
+  @media(min-width: 1000px) {
+    height: 500px;
+    background: url('~/img/bg-hero-landing-large-c_scale,w_1600 webp.webp') no-repeat;
+    background-size: cover;
+  }
 }
 
 .hero-main__title {
@@ -13,11 +21,24 @@
   font-weight: bold;
   line-height: 1.2;
   text-align: left;
+
+  @media(min-width: 360px) {
+    padding-top: 50px;
+  }
+
+  @media(min-width: 1000px) {
+    padding: 0;
+    width: 650px;
+    position: absolute;
+    top: 125px;
+    left: 210px;
+    font-size: 54px;
+  }
 }
 
 .hero-main__button {
   display: block;
-  width: 280px;
+  min-width: 280px;
   height: 45px;
   margin: 0 auto;
   background-color: $primary-button;
@@ -25,17 +46,18 @@
   font-size: 16px;
   font-weight: bold;
   line-height: 1.5;
+  text-align: center;
+  border: none;
+
+  @media(min-width: 1000px) {
+    position: absolute;
+    top: 294px;
+    left: 210px;
+    width: 280px;
+    height: 60px;
+  }
 }
 
-.Get_Started_Now {
-  font-size: 20px;
-  font-family: "Helvetica Neue";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 3;
-  position: absolute;
-  left: 270px;
-  top: 403.86px;
-  z-index: 72;
-}
+
+
 

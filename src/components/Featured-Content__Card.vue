@@ -8,8 +8,8 @@
     </section>
     <section class="card-content__images" role="region">
       <a href="#" role="link">
-        <picture class="card__image" v-for="(img, index) in product.img" :key="index">
-          <img v-bind:src="img" role="img"/>
+        <picture class="card__image-container" v-for="(img, index) in product.img" :key="index">
+          <img class="card__image" v-bind:src="img" role="img"/>
         </picture>
       </a> 
     </section>    
@@ -25,7 +25,7 @@ export default {
 				{
 					title: 'Honda Cars and SUVs',
 					description:
-						'Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot',
+						'Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.',
 					img: [
 						'/img/img-card-landing-med-honda-car.jpg',
 						'/img/img-card-landing-med-honda-suv.jpg',
@@ -34,7 +34,7 @@ export default {
 				{
 					title: 'Audi Cars and SUVs',
 					description:
-						'Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot',
+						'Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.',
 					img: [
 						'/img/img-card-landing-med-audi-car.jpg',
 						'/img/img-card-landing-med-audi-suv.jpg',
@@ -43,7 +43,7 @@ export default {
 				{
 					title: 'Chevy Cars, Trucks and SUVs',
 					description:
-						'Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot',
+						'Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.',
 					img: [
 						'/img/img-card-landing-med-chevy-car.jpg',
 						'/img/img-card-landing-med-chevy-suv.jpg',
@@ -52,7 +52,7 @@ export default {
 				{
 					title: 'Ford Cars, Trucks and SUVs',
 					description:
-						'Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot',
+						'Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.',
 					img: [
 						'/img/img-card-landing-med-ford-car.jpg',
 						'/img/img-card-landing-med-ford-truck.jpg',
