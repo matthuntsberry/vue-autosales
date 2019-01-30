@@ -9,11 +9,6 @@
     padding: 0 55px;
   }
 
-  @media(min-width: 900px) {
-  
-
-  }
-
   @media(min-width: 1600px) {
     height: 360px;
     padding: 0 210px;
@@ -31,16 +26,15 @@
     // column layout.
     .card-content__text {
       grid-column: 2 / 3;
-      justify-self: end;
-      
+      justify-self: end; 
     }
     
     .card-content__images {
       grid-column: 1 / 2;
       justify-self: start;
     }
-
   }
+
   @media(min-width: 1600px) {
     .card__image {
       width: 280px;
@@ -123,7 +117,12 @@
     grid-gap: 20px;
     align-content: center;
   }
-  
+
+  @media(min-width: 1000px) {
+    justify-self: start;
+    grid-column: 2 / 3;
+  }
+
   @media(min-width: 1600px) {
     align-content: center;
     justify-self: end;
@@ -136,9 +135,10 @@
   padding: 20px;
 
   @media(min-width: 768px) {
-    padding: 0;
     margin: 20px 0;
+    padding: 0;
   }
+  
 
   @media(min-width: 1600px) {
     width: 280px;

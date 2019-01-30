@@ -2,7 +2,7 @@
     <form class="filters u-grid" role="form">
       <select name="make" class="filters-list" role="menu">
         <optgroup label="Make" role="group">
-          <option value="option1" class="filters-list__item" role="group">Make</option>
+          <option value="option0" class="filters-list__item" role="group">Make</option>
           <option value="option1" class="filters-list__item" role="group">Option 1</option>
           <option value="option2" class="filters-list__item" role="group">Option 2</option>
           <option value="option3" class="filters-list__item" role="group">Option 3</option>
@@ -11,7 +11,7 @@
       </select>
       <select name="model" class="filters-list" role="menu">
         <optgroup label="Model">
-          <option value="option1" class="filters-list__item" role="group">Model</option>
+          <option value="option0" class="filters-list__item" role="group">Model</option>
           <option value="option1" class="filters-list__item" role="group">Option 1</option>
           <option value="option2" class="filters-list__item" role="group">Option 2</option>
           <option value="option3" class="filters-list__item" role="group">Option 3</option>
@@ -20,7 +20,7 @@
       </select>
       <select name="model" class="filters-list" role="menu">
         <optgroup label="Price">
-          <option value="option1" class="filters-list__item" role="group">Price</option>
+          <option value="option0" class="filters-list__item" role="group">Price</option>
           <option value="option1" class="filters-list__item" role="group">Option 1</option>
           <option value="option2" class="filters-list__item" role="group">Option 2</option>
           <option value="option3" class="filters-list__item" role="group">Option 3</option>

@@ -9,7 +9,6 @@
   
   @media(min-width: 1000px) {
     padding: 0 36px;
-
   }
 }
 
@@ -20,6 +19,7 @@
 }
 
 .global__branding {
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   color: $secondary-text;
   font-weight: bold;
@@ -41,9 +41,14 @@
   padding: 0;
   background-color: $primary;
   border: none;
+  cursor: pointer;
 }
+
+// TODO: CREATE AN ACTIVE STATE FOR SEARCH TO SHOW USER FEEDBACK WHEN PRESSED
+// TODO: CREATE HOVER STATE
 
 .search-icon__image {
   width: 24px;
   height: 24px;
 }
+
