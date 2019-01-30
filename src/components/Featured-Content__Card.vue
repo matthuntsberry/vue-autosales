@@ -6,14 +6,14 @@
       <p class="card__body">{{product.description}}</p>
       <a href="#" class="card__button">View All</a>
     </section>
-    <section class="card-content__images" role="region">
-      <a href="#" class="card-content__image--link" role="link">
-        <picture class="card__image-container" v-for="(img, index) in product.img" :key="index">
-          <img class="card__image" v-bind:src="img" role="img"/>
-        </picture>
-      </a> 
+      <section class="card-content__images u-grid" role="list">
+        <section class="card-content__image-container" v-for="(img, index) in product.img" :key="index">
+          <a href="#" class="card-content__image--link" role="link">
+            <img class="card__image" v-bind:src="img" alt=""/>
+          </a>
+        </section>
+      </section>    
     </section>    
-  </section>
   </main>
 </template>
 

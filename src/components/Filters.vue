@@ -1,5 +1,5 @@
 <template>
-    <form class="filters u-flex" role="form">
+    <form class="filters u-grid" role="form">
       <select name="make" class="filters-list" role="menu">
         <optgroup label="Make" role="group">
           <option value="option1" class="filters-list__item" role="group">Make</option>

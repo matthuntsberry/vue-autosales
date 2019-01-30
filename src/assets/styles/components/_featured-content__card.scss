@@ -1,10 +1,20 @@
 .featured-content__card {
   background-color: $off-white;
 
-  @media(min-width: 1000px) {
+  @media(min-width: 768px) {
     display: grid;
     grid-auto-flow: dense;
+    grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
+    padding: 0 55px;
+  }
+
+  @media(min-width: 900px) {
+  
+
+  }
+
+  @media(min-width: 1600px) {
     height: 360px;
     padding: 0 210px;
   }
@@ -20,14 +30,22 @@
     // had to nest selectors to reverse
     // column layout.
     .card-content__text {
-      justify-self: flex-end;
       grid-column: 2 / 3;
+      justify-self: end;
       
     }
     
     .card-content__images {
       grid-column: 1 / 2;
-      justify-self: flex-start;
+      justify-self: start;
+    }
+
+  }
+  @media(min-width: 1600px) {
+    .card__image {
+      width: 280px;
+      margin-left: 0;
+      padding: 0;
     }
   }
 }
@@ -35,10 +53,14 @@
 .card-content__text {
   padding: 20px;
 
-  @media(min-width: 1000px) {
+  @media(min-width: 768px) {
+    align-self: center;
+    padding: 20px 0;
+  }
+
+  @media(min-width: 1600px) {
+    align-self: center;
     width: 490px;
-    margin: 65px 0 40px;
-    padding: 0;
   }
 }
 
@@ -58,7 +80,6 @@
 
 .card__button {
   display: block;
-  width: 280px;
   height: 45px;
   margin: 0 auto;
   background-color: $tertiary-button;
@@ -68,40 +89,60 @@
   font-weight: bold;
   line-height: 3;
   text-align: center;
-
-  @media(min-width: 1000px) {
+  
+  @media(min-width: 580px) {
     width: 120px;
     height: 45px;
     margin: 0;
   }
 }
 
+.card-content__image-container {
+  @media(min-width: 580px) {
+    align-self: center;
+  }
+}
+
 .card__image-container {
-  display: inline-flex;
-  flex-direction: row;
-  width: 280px;
-  height: 280px;
   margin-bottom: 20px;
   background-color: #fff;
 
-  @media(min-width: 1000px) {
-    margin: 0;
-    margin-top: 40px;
+  @media(min-width: 580px) {
+    padding: 20px;
   }
 }
 
 .card-content__images {
-  text-align: center;  
-  @media(min-width: 1000px) {
-    justify-self: flex-end;
+  text-align: center;
+
+  @media(min-width: 580px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media(min-width: 768px) {
+    grid-gap: 20px;
+    align-content: center;
+  }
+  
+  @media(min-width: 1600px) {
+    align-content: center;
+    justify-self: end;
   }
 }
 
-.card-content__image--link {
-  @media(min-width: 1000px) {
-    :not(:first-child) {
-      margin-left: 20px;
-    }
+.card__image {
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+
+  @media(min-width: 768px) {
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  @media(min-width: 1600px) {
+    width: 280px;
+    margin: 0;
+    padding: 0;
   }
 }
-
