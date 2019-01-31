@@ -6,7 +6,7 @@
   right: 0;
   width: 320px;
   height: 100vh;
-  padding-top: 30px;
+  padding-top: 100px;
   overflow-x: hidden;
   transform: translateX(320px);
   transition: all .3s ease-in-out;
@@ -99,11 +99,11 @@
 
 .nav-list {
   justify-content: center;
-  height: 50vh;
+  height: 40vh;
 
   @media(min-width: 1000px) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 125px);
     align-content: center;
     height: 50px;
     padding-top: 0;

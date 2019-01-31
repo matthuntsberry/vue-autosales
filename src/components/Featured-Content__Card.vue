@@ -8,11 +8,16 @@
       <a href="#" class="card__button" role="link">View All</a>
     </section>
       <section class="card-content__images u-grid" role="region">
-        <section class="card-content__image-container" role="region" v-for="(img, index) in product.img" :key="index">
-          <a href="#" class="card-content__image--link" role="link">
-            <img class="card__image" v-bind:src="img" v-bind:alt="product.alt[index]" role="img"/>
+        <div class="card-content__image-container" role="region" v-for="(img, index) in product.img" :key="index">
+          <a href="#" role="link">
+            <div class="card-content__image-overlay" role="presentation"></div> 
+              <img class="card__image" v-bind:src="img" v-bind:alt="product.alt[index]" role="img"/>    
+              <div class="card-image-details fadein-bottom" role="contentinfo">
+                <h5 class="card-image__overlay-title">{{ product.model[index] }}</h5>
+                <span class="card-image__overlay-text">Learn More</span>
+              </div>
           </a>
-        </section>
+        </div>
       </section>    
     </section>    
   </main>
@@ -26,6 +31,7 @@ export default {
 			products: [
 				{
 					title: 'Honda Cars and SUVs',
+					model: ['Honda Civic', 'Honda CRV'],
 					description:
 						'Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.',
 					img: [
@@ -36,6 +42,7 @@ export default {
 				},
 				{
 					title: 'Audi Cars and SUVs',
+					model: ['Audi Q7', 'Audi A6'],
 					description:
 						'Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.',
 					img: [
@@ -46,6 +53,7 @@ export default {
 				},
 				{
 					title: 'Chevy Cars, Trucks and SUVs',
+					model: ['Chevy Camaro', 'Chevy Equionx'],
 					description:
 						'Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.',
 					img: [
@@ -56,6 +64,7 @@ export default {
 				},
 				{
 					title: 'Ford Cars, Trucks and SUVs',
+					model: ['Ford Mustang', 'Ford 1500'],
 					description:
 						'Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.',
 					img: [

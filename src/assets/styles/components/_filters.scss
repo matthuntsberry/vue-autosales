@@ -1,5 +1,5 @@
 .filters {
-  padding: 40px 20px;
+  padding: 25px 20px;
   background-color: $white;
 
   @media(min-width: 580px) {
@@ -9,7 +9,7 @@
 
   @media(min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 40px 55px;
+    padding: 25px 55px;
   }
  
   @media(min-width: 1000px) {
@@ -17,11 +17,11 @@
   }
   
   @media(min-width: 1280px) {
-    padding: 40px 105px;
+    padding: 25px 105px;
   }
   
   @media(min-width: 1600px) {
-    padding: 40px 210px;
+    padding: 25px 210px;
   }
 }
 

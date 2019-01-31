@@ -43,6 +43,11 @@
 }
 
 .page-info__link {
+  transition: all .3s;
   color: $quaternary-text;
   text-decoration: none;
+
+  &:hover {
+    color: $secondary-text;
+  }
 }
