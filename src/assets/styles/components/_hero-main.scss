@@ -72,14 +72,14 @@
 .hero-main__button {
   height: 45px;
   margin: 20px 20px 0;
+  transition: all .3s;
   background-color: $primary-button;
   color: $secondary-text;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.5;
-  border: none;
-  transition: all .3s;
   cursor: pointer;
+  border: none;
 
   &:hover {
     background-color: #2dd484;

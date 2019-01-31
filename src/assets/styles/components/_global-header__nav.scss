@@ -1,8 +1,6 @@
-// Nav on Mobile
-.global-header__nav {
+.global-nav {
   position: fixed;
   z-index: 1;
-  top: 50px;
   right: 0;
   width: 320px;
   height: 100vh;
@@ -27,19 +25,19 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.global-header__nav--animated-open {
+.global-nav__button--animated-open {
   transform: translateX(0);
 }
 
 // Hamburger button stylings
-.global-header__nav-button {
+.global-nav__button {
   justify-self: flex-end;
   width: 30px;
   height: 50px;
   margin: 0;
   padding: 0;
-  border: none;
   background-color: $primary;
+  border: none;
 
   @media(min-width: 1000px) {
     display: none;
@@ -47,9 +45,10 @@
 }
 
 // Middle of Icon
-.nav-button__icon {
+.global-nav__button-icon {
   display: block;
   position: relative;
+  z-index: 9;
   width: 30px;
   height: 4px;
   transition-duration: .5s;
@@ -59,8 +58,8 @@
 
 
 // Top & Bottom of Icon
-.nav-button__icon::before,
-.nav-button__icon::after {
+.global-nav__button-icon::before,
+.global-nav__button-icon::after {
   content: '';
   display: block;
   position: absolute;
@@ -72,27 +71,27 @@
 }
 
 // Positioning of top and bottom of Icon
-.nav-button__icon::before {
+.global-nav__button-icon::before {
   top: -10px;
 }
 
-.nav-button__icon::after {
+.global-nav__button-icon::after {
   top: 10px;
 }
 
 // Animates on button click
 // Forms `X`
-.active {
+.nav--active {
+  position: fixed;
   height: 0;
 }
 
-.active::before {
+.nav--active::before {
   top: 0;
   transform: rotate(135deg);
-
 }
 
-.active::after {
+.nav--active::after {
   top: 0;
   transform: rotate(-135deg);
 }
@@ -112,7 +111,7 @@
 
 .nav-list__item {
   align-self: end;
-
+  padding: 10px 0;
 }
 
 .nav-list__link {
@@ -127,9 +126,9 @@
   }
 
   @media(min-width: 1000px) {
+    border-bottom: 0;
     font-size: 14px;
     text-decoration: none;
-    border-bottom: 0;
   }
 }
 

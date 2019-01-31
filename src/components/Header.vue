@@ -1,13 +1,16 @@
  <template>
   <header class="global-header" role="banner">
-    <a href="#" class="global__branding u-grid" role="link"><img src="../assets/img/logo-autosales.svg" alt="Icon of a Yellow Car" class="logo" role="presentation"/><h1 class="global__title" role="heading">AutoSales.com</h1></a>
+    <a href="#" class="global__branding u-grid" role="link">
+      <img src="../assets/img/logo-autosales.svg" alt="Animated Yellow Car" class="logo" role="presentation"/>
+      <h1 class="global__title" role="heading">AutoSales.com</h1>
+    </a>
      <section class="global-header__controls u-grid" role="region">
         <button class="global-search__button" role="button"><img src="../assets/img/icon-search-white.svg" alt="Magnifying Glass Symobolizing a Search Field" class="global-search__icon" role="presentation"></button>
-        <button class="global-header__nav-button" @click="toggleNav" role="button">
-          <span class="nav-button__icon" :class="{active: isActive}" role="presentation"></span>
+        <button class="global-nav__button" @click="toggleNav" role="button">
+          <span class="global-nav__button-icon" :class="{'nav--active': isActive}" role="presentation"></span>
         </button>
      </section>
-    <nav class="global-header__nav" :class="{'global-header__nav--animated-open': isActive}" role="navigation">
+    <nav class="global-nav" :class="{'global-nav__button--animated-open': isActive}" role="navigation">
       <ul class="nav-list u-grid" role="list">
         <li class="nav-list__item" role="listitem"><a href="#" class="nav-list__link" role="link">Cars for Sale</a></li>
         <li class="nav-list__item" role="listitem"><a href="#" class="nav-list__link" role="link">Sell My Car</a></li>
