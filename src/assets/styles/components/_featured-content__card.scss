@@ -8,6 +8,10 @@
     grid-template-columns: 1fr 1fr;
     padding: 0 55px;
   }
+  
+  @media(min-width: 1280px) {
+    padding: 0 105px;
+  }
 
   @media(min-width: 1600px) {
     height: 360px;
