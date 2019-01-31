@@ -10,7 +10,7 @@
   }
   
   @media(min-width: 1280px) {
-    padding: 0 210px;
+    padding: 0 105px;
   }
 
   @media(min-width: 1600px) {
@@ -136,6 +136,11 @@
     justify-self: start;
     grid-column: 2 / 3;
   }
+ 
+  @media(min-width: 1280px) {
+    justify-self: end;
+    grid-column: 2 / 3;
+  }
 
   @media(min-width: 1600px) {
     align-content: center;
@@ -157,7 +162,6 @@
     margin: 20px 0;
     padding: 0;
   }
-  
 
   @media(min-width: 1600px) {
     width: 280px;

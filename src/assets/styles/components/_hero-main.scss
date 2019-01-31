@@ -57,10 +57,14 @@
     font-size: 42px;
   }
   
+  @media(min-width: 1280px) {
+    padding-left: 105px;
+  }
+  
   @media(min-width: 1600px) {
     width: 850px;
-    padding-left: 210px;
     padding-bottom: 10px;
+    padding-left: 210px;
     font-size: 54px;
   }
 }
@@ -79,6 +83,10 @@
     width: 280px;
     margin: 0 20px;    
   }
+  
+  @media(min-width: 768px) {
+    margin: 0 55px;
+  }
 
   @media(min-width: 1000px) {
     top: 254px;
@@ -86,8 +94,8 @@
     height: 60px;
   }
 
-  @media(min-width: 768px) {
-    margin: 0 55px;
+  @media(min-width: 1280px) {
+    margin-left: 105px;
   }
   
   @media(min-width: 1600px) {
