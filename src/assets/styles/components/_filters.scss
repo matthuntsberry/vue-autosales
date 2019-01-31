@@ -29,6 +29,7 @@
   height: 45px;
   margin-bottom: 20px;
   padding-left: 20px;
+  transition: all .3s;
   border: 2px solid #cdd1d4;
   border-radius: 0;
   background: url('/img/chevron.svg') no-repeat;
@@ -38,6 +39,12 @@
   font-size: 16px;
   font-weight: bold;
   appearance: none;
+
+  &:hover {
+    cursor: pointer;
+    border-color: $dark-blue;
+
+  }
 
   @media(min-width: 580px) {
     width: 100%;
@@ -55,6 +62,7 @@
 
 .filters__button {
   height: 45px;
+  transition: all .3s;
   background-color: $secondary-button;
   color: #fff;
   font-family: 'Helvetica Neue';
@@ -62,6 +70,11 @@
   font-weight: bold;
   border: none;
   
+  &:hover {
+    background-color: #fd9476;
+    cursor: pointer;
+  }
+
   @media(min-width: 580px) {
     width: 100%;
     margin: 0;
@@ -83,5 +96,6 @@
     width: 100%;
   }
 }
+
 
 

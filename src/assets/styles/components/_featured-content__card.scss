@@ -93,6 +93,7 @@
   display: block;
   height: 45px;
   margin: 0 auto;
+  transition: all .3s;
   background-color: $tertiary-button;
   color: $white;
   font-family: 'Helvetica Neue';
@@ -100,6 +101,11 @@
   font-weight: bold;
   line-height: 3;
   text-align: center;
+
+  &:hover {
+    background-color: #5dd3f6;
+    cursor: pointer;
+  }
   
   @media(min-width: 580px) {
     width: 120px;
@@ -110,7 +116,6 @@
 
 .card-content__image-container {
   position: relative;
-  // overflow: hidden;
   margin: 0 20px 20px;
 
   @media(min-width: 580px) {
