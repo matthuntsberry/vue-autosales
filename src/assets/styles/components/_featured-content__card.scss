@@ -10,7 +10,7 @@
   }
   
   @media(min-width: 1280px) {
-    padding: 0 105px;
+    padding: 0 210px;
   }
 
   @media(min-width: 1600px) {
@@ -44,6 +44,16 @@
       width: 280px;
       margin-left: 0;
       padding: 0;
+    }
+  }
+
+  @media(min-width: 1601px) {
+    .card-content__images {
+      justify-self: stretch;
+    }
+
+    .card__image {
+      width: 100%;
     }
   }
 }
@@ -131,6 +141,11 @@
     align-content: center;
     justify-self: end;
   }
+ 
+  @media(min-width: 1601px) {
+    align-content: center;
+    justify-self: stretch;
+  }
 }
 
 .card__image {
@@ -148,5 +163,9 @@
     width: 280px;
     margin: 0;
     padding: 0;
+  }
+  
+  @media(min-width: 1601px) {
+    width: 100%;
   }
 }
